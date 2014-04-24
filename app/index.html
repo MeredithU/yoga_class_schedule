@@ -17,10 +17,17 @@
 
   <h1>Yoga Class Schedule</h1>
 
+  <p>Search: <input ng-model="query"></p>
+
   <ul>
-    <li ng-repeat="class in classes">
+    <li ng-repeat="class in classes | filter:query">
       {{class.name}}
+      <p>{{class.day}}</p>
       <p>{{class.startTime}}</p>
+      <p>{{class.endTime}}</p>
+      <p>{{class.teacher}}</p>
+      <p>{{class.studio}}</p>
+      <p>{{class.level}}</p>
     </li>
   </ul>
 
