@@ -1,11 +1,12 @@
 'use strict';
 
-/* Controllers */
+var yogaClassApp = angular.module('yogaClassApp', []);
 
-angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', [function() {
-
-  }])
-  .controller('MyCtrl2', [function() {
-
-  }]);
+yogaClassApp.controller('YogaClassCtrl', function ($scope) {
+	$scope.classes = [
+	{	'name': 'All Levels',
+		'startTime': '9:30am'},
+	{	'name': 'Ashtanga',
+		'startTime': '10:30am'}
+	];
+});
