@@ -3,7 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Yoga Class Angular App</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -19,17 +26,26 @@
 
   <p>Search: <input ng-model="query"></p>
 
-  <ul>
-    <li ng-repeat="class in classes | filter:query">
-      {{class.name}}
-      <p>{{class.day}}</p>
-      <p>{{class.startTime}}</p>
-      <p>{{class.endTime}}</p>
-      <p>{{class.teacher}}</p>
-      <p>{{class.studio}}</p>
-      <p>{{class.level}}</p>
-    </li>
-  </ul>
+  <table class="table table-striped table-hover">
+    <tr>
+      <th>Begins</th>
+      <th>Ends</th>
+      <th>Day</th>
+      <th>Class</th>
+      <th>Teacher</th>
+      <th>Studio</th>
+      <th>Level</th>
+    </tr>
+    <tr ng-repeat="class in classes | filter:query">
+      <td>{{class.startTime}}</td>
+      <td>{{class.endTime}}</td>
+      <td>{{class.day}}</td>
+      <td>{{class.name}}</td>
+      <td>{{class.teacher}}</td>
+      <td>{{class.studio}}</td>
+      <td>{{class.level}}</td>
+    </tr>
+  </table>
 
 </body>
 </html>
