@@ -24,7 +24,12 @@
 
   <h1>Yoga Class Schedule</h1>
 
-  <p>Search: <input ng-model="query"></p>
+  <!-- Filtering -->
+  <label>Search All: </label>
+    <input ng-model="query">
+  
+  <label>Day: </label>
+  <input type="text" id="day" ng-model="filter.day" placeholder="Day of the Week">
 
   <table class="table table-striped table-hover">
     <tr>
@@ -36,7 +41,7 @@
       <th>Studio</th>
       <th>Level</th>
     </tr>
-    <tr ng-repeat="class in classes | filter:query">
+    <tr ng-repeat="class in classes | filter:query | filter:{day: filter.day}">
       <td>{{class.startTime}}</td>
       <td>{{class.endTime}}</td>
       <td>{{class.day}}</td>
