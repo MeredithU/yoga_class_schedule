@@ -1,5 +1,7 @@
 'use strict';
 
+
+// Filter by studio
 yogaClassApp.filter('myFilter', function() {
 	return function(items, studios) {
 		var studioMatches = [];
