@@ -37,24 +37,26 @@
   <input type="checkbox" ng-model="studios.wedgewood"> Wedgewood
 
   <table class="table table-striped table-hover">
-    <tr>
-      <th>Begins</th>
-      <th>Ends</th>
-      <th>Day</th>
-      <th>Class</th>
-      <th>Teacher</th>
-      <th>Studio</th>
-      <th>Level</th>
-    </tr>
-    <tr ng-repeat="class in classes | filter:query | filter:{day: filter.day} | myFilter:studios">
-      <td>{{class.startTime}}</td>
-      <td>{{class.endTime}}</td>
-      <td>{{class.day}}</td>
-      <td>{{class.name}}</td>
-      <td>{{class.teacher}}</td>
-      <td>{{class.studio}}</td>
-      <td>{{class.level}}</td>
-    </tr>
+    <tbody>
+      <tr>
+        <th>Begins</th>
+        <th>Ends</th>
+        <th>Day</th>
+        <th>Class</th>
+        <th>Teacher</th>
+        <th>Studio</th>
+        <th>Level</th>
+      </tr>
+      <tr ng-repeat="class in classes | filter:query | filter:{day: filter.day} | myFilter:studios">
+        <td>{{class.startTime}}</td>
+        <td>{{class.endTime}}</td>
+        <td>{{class.day}}</td>
+        <td>{{class.name}}</td>
+        <td>{{class.teacher}}</td>
+        <td>{{class.studio}}</td>
+        <td>{{class.level}}</td>
+      </tr>
+    </tbody>
   </table>
 
 </body>
