@@ -1,1 +1,12 @@
+.title {
+	text-align: center;
+}
 
+.search {
+	text-align: center;
+	padding: 30px 0px;
+}
+
+.search label {
+	margin-left: 15px;
+}
