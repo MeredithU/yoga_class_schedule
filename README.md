@@ -12,3 +12,6 @@ This application allows you to search for a particular yoga class.
 
 4) Open http://localhost:8000/app/index.html
 
+## Home Page Screenshot
+
+![alt text](../app/img/yoga-class.jpg)
