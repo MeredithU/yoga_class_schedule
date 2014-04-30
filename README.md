@@ -14,4 +14,4 @@ This application allows you to search for a particular yoga class.
 
 ## Home Page Screenshot
 
-![alt text](../app/img/yoga-class.jpg)
+![alt tag](/app/img/yoga-class.jpg)
