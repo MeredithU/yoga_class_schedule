@@ -2,6 +2,7 @@
 	{	
 		"name": "All Levels",
 		"day": "Monday",
+		"dayNumber": "0",
 		"startTime": "9:30am",
 		"endTime": "10:45am",
 		"teacher": "Amelia",
@@ -11,6 +12,7 @@
 	{	
 		"name": "All Levels",
 		"day": "Monday",
+		"dayNumber": "0",
 		"startTime": "9:30am",
 		"endTime": "10:45am",
 		"teacher": "Jenny",
@@ -20,6 +22,7 @@
 	{	
 		"name": "All Levels Flow",
 		"day": "Monday",
+		"dayNumber": "0",
 		"startTime": "6:30am",
 		"endTime": "7:45am",
 		"teacher": "Amelia",
@@ -29,6 +32,7 @@
 	{	
 		"name": "All Levels",
 		"day": "Monday",
+		"dayNumber": "0",
 		"startTime": "6:30am",
 		"endTime": "7:45am",
 		"teacher": "Jenny",
@@ -38,6 +42,7 @@
 	{	
 		"name": "Level I",
 		"day": "Monday",
+		"dayNumber": "0",
 		"startTime": "4pm",
 		"endTime": "5:15pm",
 		"teacher": "Laura",
@@ -45,8 +50,19 @@
 		"level": "I"
 	},
 	{	
+		"name": "All Levels",
+		"day": "Tuesday",
+		"dayNumber": "1",
+		"startTime": "9:30am",
+		"endTime": "10:45am",
+		"teacher": "Jenny",
+		"studio": "Wedgewood",
+		"level": "All"
+	},
+	{	
 		"name": "Level I",
 		"day": "Monday",
+		"dayNumber": "0",
 		"startTime": "4:30pm",
 		"endTime": "5:30pm",
 		"teacher": "Jen",
@@ -56,19 +72,11 @@
 	{	
 		"name": "All Levels",
 		"day": "Tuesday",
+		"dayNumber": "1",
 		"startTime": "9:30am",
 		"endTime": "10:45am",
 		"teacher": "Amelia",
 		"studio": "Capitol Hill",
-		"level": "All"
-	},
-	{	
-		"name": "All Levels",
-		"day": "Tuesday",
-		"startTime": "9:30am",
-		"endTime": "10:45am",
-		"teacher": "Jenny",
-		"studio": "Wedgewood",
 		"level": "All"
 	}
 ]

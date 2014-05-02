@@ -7,5 +7,7 @@ yogaClassApp.controller('YogaClassCtrl', function ($scope, $http) {
 		$scope.classes = data;
 	});
 
+	$scope.dayNumber = 'dayNumber';
+
 	$scope.studios = {capitolHill: false, wedgewood: false};
 });

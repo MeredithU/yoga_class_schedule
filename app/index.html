@@ -56,7 +56,7 @@
             <th>Studio</th>
             <th>Level</th>
           </tr>
-          <tr ng-repeat="class in classes | filter:query | filter:{day: filter.day} | myFilter:studios">
+          <tr ng-repeat="class in classes | filter:query | orderBy:dayNumber | filter:{day: filter.day} | myFilter:studios">
             <td>{{class.startTime}}</td>
             <td>{{class.endTime}}</td>
             <td>{{class.day}}</td>
