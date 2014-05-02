@@ -1,8 +1,8 @@
 'use strict';
 
-var yogaClassApp = angular.module('yogaClassApp', []);
+var yogaClassControllers = angular.module('yogaClassControllers', []);
 
-yogaClassApp.controller('YogaClassCtrl', function ($scope, $http) {
+yogaClassControllers.controller('YogaClassCtrl', function ($scope, $http) {
 	$http.get('classes/classes.json').success(function(data) {
 		$scope.classes = data;
 	});

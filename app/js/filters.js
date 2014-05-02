@@ -2,7 +2,7 @@
 
 
 // Filter by studio
-yogaClassApp.filter('myFilter', function() {
+angular.module('yogaClassFilters', []).filter('studioFilter', function() {
 	return function(items, studios) {
 		var studioMatches = [];
 
