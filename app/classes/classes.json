@@ -1,6 +1,7 @@
 [
 	{	
-		"name": "All Levels",
+		"name": "All Levels Flow",
+		"classID": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "9:30am",
@@ -10,7 +11,8 @@
 		"level": "All"
 	},
 	{	
-		"name": "All Levels",
+		"name": "All Levels Flow",
+		"classID": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "9:30am",
@@ -21,6 +23,7 @@
 	},
 	{	
 		"name": "All Levels Flow",
+		"classID": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "6:30am",
@@ -30,7 +33,8 @@
 		"level": "All"
 	},
 	{	
-		"name": "All Levels",
+		"name": "All Levels Flow",
+		"classID": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "6:30am",
@@ -40,7 +44,19 @@
 		"level": "All"
 	},
 	{	
+		"name": "All Levels Flow",
+		"classID": "all-levels-flow",
+		"day": "Wednesday",
+		"dayNumber": "2",
+		"startTime": "9:30am",
+		"endTime": "10:45am",
+		"teacher": "Amelia",
+		"studio": "Capitol Hill",
+		"level": "All"
+	},
+	{	
 		"name": "Level I",
+		"classID": "level-one",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "4pm",
@@ -50,7 +66,8 @@
 		"level": "I"
 	},
 	{	
-		"name": "All Levels",
+		"name": "All Levels Flow",
+		"classID": "all-levels-flow",
 		"day": "Tuesday",
 		"dayNumber": "1",
 		"startTime": "9:30am",
@@ -61,6 +78,7 @@
 	},
 	{	
 		"name": "Level I",
+		"classID": "level-one",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "4:30pm",
@@ -70,7 +88,8 @@
 		"level": "I"
 	},
 	{	
-		"name": "All Levels",
+		"name": "All Levels Flow",
+		"classID": "all-levels-flow",
 		"day": "Tuesday",
 		"dayNumber": "1",
 		"startTime": "9:30am",

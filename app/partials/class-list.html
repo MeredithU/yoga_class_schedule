@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-md-1"></div>
+
+  <div class="col-md-10">
+    <div class="title">
+      <h1>Yoga Class Schedule</h1>
+    </div><!-- title -->
+
+    <div class="search">
+      <!-- Filtering -->
+      
+      <label>Search All: </label>
+      <input ng-model="query">
+
+      <label>Day: </label>
+      <input type="text" ng-model="filter.day" placeholder="Day of the Week">
+
+      <label>Studio: </label>
+      <input type="checkbox" ng-model="studios.capitolHill"> Capitol Hill
+      <input type="checkbox" ng-model="studios.wedgewood"> Wedgewood
+
+    </div><!-- search -->
+
+    <table class="table table-bordered table-striped table-hover">
+      <tbody>
+        <tr>
+          <th>Begins</th>
+          <th>Ends</th>
+          <th>Day</th>
+          <th>Class</th>
+          <th>Teacher</th>
+          <th>Studio</th>
+          <th>Level</th>
+        </tr>
+        <tr ng-repeat="class in classes | filter:query | orderBy:dayNumber | filter:{day: filter.day} | studioFilter:studios">
+          <td>{{class.startTime}}</td>
+          <td>{{class.endTime}}</td>
+          <td>{{class.day}}</td>
+          <td><a href="#/classes/{{class.classID}}">{{class.name}}</a></td>
+          <td>{{class.teacher}}</td>
+          <td>{{class.studio}}</td>
+          <td>{{class.level}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- col-md-10 -->
+
+  <div class="col-md-1"></div>
+</div><!-- row -->
