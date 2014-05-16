@@ -2,6 +2,8 @@
 
 This application allows you to search for a particular yoga class.
 
+You can view it on Heroku here: http://yoga-class-schedule-angularjs.herokuapp.com/
+
 ## Set Up
 
 1) Clone the repository
