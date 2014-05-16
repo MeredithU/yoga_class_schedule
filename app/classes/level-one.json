@@ -1,15 +1,16 @@
 {
-	"level": "I",
-	"levelDescription": "	Level I classes at 8 Limbs are ongoing classes for the Beginning 
-												or Continuing student who wants to focus on learning the basics 
-												of yoga postures, breathing practices, and concepts. We recommend 
-												at least one Intro to Hatha Yoga to prepare you for these classes. 
-												These classes were previously titled Basics.",
-	"classType": "Hatha Yoga",
 	"classDescription": "	Our Hatha Yoga classes are instructional, insightful, and appropriate 
 												to your degree of yoga experience. The state of yoga is defined simply 
 												as having a one-pointed, focused mind. Hatha Yoga uses physical 
 												postures and other practices to find this state. A well-established 
 												practice with ancient roots, yoga is supported by modern science and 
-												embraced all over the globe."
+												embraced all over the globe.",
+	"classType": "Hatha Yoga",
+	"id": "level-one",
+	"level": "I",
+	"levelDescription": "	Level I classes at 8 Limbs are ongoing classes for the Beginning 
+												or Continuing student who wants to focus on learning the basics 
+												of yoga postures, breathing practices, and concepts. We recommend 
+												at least one Intro to Hatha Yoga to prepare you for these classes. 
+												These classes were previously titled Basics."
 }

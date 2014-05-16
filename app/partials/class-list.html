@@ -19,6 +19,10 @@
       <input type="checkbox" ng-model="studios.capitolHill"> Capitol Hill
       <input type="checkbox" ng-model="studios.wedgewood"> Wedgewood
 
+      <label>Level: </label>
+      <input type="checkbox" ng-model="levels.allLevels"> All
+      <input type="checkbox" ng-model="levels.levelOne"> I
+
     </div><!-- search -->
 
     <table class="table table-bordered table-striped table-hover">
@@ -32,14 +36,14 @@
           <th>Studio</th>
           <th>Level</th>
         </tr>
-        <tr ng-repeat="class in classes | filter:query | orderBy:dayNumber | filter:{day: filter.day} | studioFilter:studios">
-          <td>{{class.startTime}}</td>
-          <td>{{class.endTime}}</td>
-          <td>{{class.day}}</td>
-          <td><a href="#/classes/{{class.classID}}">{{class.name}}</a></td>
-          <td>{{class.teacher}}</td>
-          <td>{{class.studio}}</td>
-          <td>{{class.level}}</td>
+        <tr ng-repeat="yogaClass in classes | filter:query | orderBy:dayNumber | filter:{day: filter.day} | studioFilter:studios">
+          <td>{{yogaClass.startTime}}</td>
+          <td>{{yogaClass.endTime}}</td>
+          <td>{{yogaClass.day}}</td>
+          <td><a href="#/classes/{{yogaClass.id}}">{{yogaClass.name}}</a></td>
+          <td>{{yogaClass.teacher}}</td>
+          <td>{{yogaClass.studio}}</td>
+          <td>{{yogaClass.level}}</td>
         </tr>
       </tbody>
     </table>

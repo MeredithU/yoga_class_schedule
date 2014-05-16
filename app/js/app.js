@@ -13,7 +13,7 @@ yogaClassApp.config(['$routeProvider',
 				templateUrl: 'partials/class-list.html',
 				controller: 'YogaClassCtrl'
 			}).
-			when('/classes/:classID', {
+			when('/classes/:classId', {
 				templateUrl: 'partials/class-detail.html',
 				controller: 'YogaClassDetailCtrl'
 			}).

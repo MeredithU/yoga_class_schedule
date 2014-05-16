@@ -1,8 +1,4 @@
 {
-	"level": "All",
-	"levelDescription": "	All Levels classes embrace the range of levels, with modifications
-												and opportunities to intensify or simplify as needed.",
-	"classType": "Hatha Flow",
 	"classDescription": "	Classes marked “Flow” will move with the breath from pose 
 												to pose and have a more dynamic pace (also known as Vinyasa Yoga). 
 												Our Hatha Yoga classes are instructional, insightful, and 
@@ -10,5 +6,11 @@
 												defined simply as having a one-pointed, focused mind. Hatha Yoga 
 												uses physical postures and other practices to find this state. 
 												A well-established practice with ancient roots, yoga is supported by 
-												modern science and embraced all over the globe."
+												modern science and embraced all over the globe.",
+	"classType": "Hatha Flow",											
+	"id": "all-levels-flow",
+	"level": "All",
+	"levelDescription": "	All Levels classes embrace the range of levels, with modifications
+												and opportunities to intensify or simplify as needed."	
 }
+

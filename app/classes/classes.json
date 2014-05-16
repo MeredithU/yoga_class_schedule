@@ -1,7 +1,7 @@
 [
 	{	
 		"name": "All Levels Flow",
-		"classID": "all-levels-flow",
+		"id": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "9:30am",
@@ -12,7 +12,7 @@
 	},
 	{	
 		"name": "All Levels Flow",
-		"classID": "all-levels-flow",
+		"id": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "9:30am",
@@ -23,7 +23,7 @@
 	},
 	{	
 		"name": "All Levels Flow",
-		"classID": "all-levels-flow",
+		"id": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "6:30am",
@@ -34,7 +34,7 @@
 	},
 	{	
 		"name": "All Levels Flow",
-		"classID": "all-levels-flow",
+		"id": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "6:30am",
@@ -45,7 +45,7 @@
 	},
 	{	
 		"name": "All Levels Flow",
-		"classID": "all-levels-flow",
+		"id": "all-levels-flow",
 		"day": "Wednesday",
 		"dayNumber": "2",
 		"startTime": "9:30am",
@@ -56,7 +56,7 @@
 	},
 	{	
 		"name": "Level I",
-		"classID": "level-one",
+		"id": "level-one",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "4pm",
@@ -67,7 +67,7 @@
 	},
 	{	
 		"name": "All Levels Flow",
-		"classID": "all-levels-flow",
+		"id": "all-levels-flow",
 		"day": "Tuesday",
 		"dayNumber": "1",
 		"startTime": "9:30am",
@@ -78,7 +78,7 @@
 	},
 	{	
 		"name": "Level I",
-		"classID": "level-one",
+		"id": "level-one",
 		"day": "Monday",
 		"dayNumber": "0",
 		"startTime": "4:30pm",
@@ -89,7 +89,7 @@
 	},
 	{	
 		"name": "All Levels Flow",
-		"classID": "all-levels-flow",
+		"id": "all-levels-flow",
 		"day": "Tuesday",
 		"dayNumber": "1",
 		"startTime": "9:30am",
