@@ -36,7 +36,7 @@
           <th>Studio</th>
           <th>Level</th>
         </tr>
-        <tr ng-repeat="yogaClass in classes | filter:query | orderBy:dayNumber | filter:{day: filter.day} | studioFilter:studios">
+        <tr ng-repeat="yogaClass in classes | filter:query | orderBy:dayNumber | filter:{day: filter.day} | studioFilter:studios | levelFilter:levels">
           <td>{{yogaClass.startTime}}</td>
           <td>{{yogaClass.endTime}}</td>
           <td>{{yogaClass.day}}</td>

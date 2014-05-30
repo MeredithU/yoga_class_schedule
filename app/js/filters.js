@@ -20,6 +20,25 @@ angular.module('yogaClassFilters', []).filter('studioFilter', function() {
 
 		return studioMatches;
 	};
+})
+.filter('levelFilter', function() {
+	return function(items, levels) {
+		var levelMatches = [];
+
+		angular.forEach(items, function(item) {
+			if(levels.allLevels == false && levels.levelOne == false) {
+				levelMatches.push(item);
+			}
+			else if(levels.allLevels == true && levels.levelOne == false && item.level == 'All') {
+				levelMatches.push(item);
+			}
+			else if(levels.allLevels == false && levels.levelOne == true && item.level == 'I') {
+				levelMatches.push(item);
+			}
+		});
+
+		return levelMatches;
+	};
 });
 
 //Filter by level
