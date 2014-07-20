@@ -16,14 +16,16 @@ yogaClassControllers.controller('YogaClassCtrl', ['$scope', '$http',
 
 }]);
 
-yogaClassControllers.controller('YogaClassDetailCtrl', ['$scope', '$routeParams',
+/*yogaClassControllers.controller('YogaClassDetailCtrl', ['$scope', '$routeParams',
  	function($scope, $routeParams) {
  			$scope.yogaClass = data;
- }]);
+ }]);*/
 
-/*yogaClassControllers.controller('YogaClassDetailCtrl', ['$scope', '$routeParams', '$http', 
+yogaClassControllers.controller('YogaClassDetailCtrl', ['$scope', '$routeParams', '$http', 
 	function($scope, $routeParams, $http) {
-		$http.get('classes/' + $routeParams.classId + '.json').success(function(data) {
-			$scope.yogaClass = data;
+		/*$http.get('classes/' + $routeParams.classId + '.json').success(function(data) {*/
+		$http.get('classes/all-levels-flow.json').success(function(data) {
+			console.log($scope.yogaClass = data);
+
 		});
-}]);*/
+}]);
