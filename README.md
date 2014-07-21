@@ -16,4 +16,4 @@ You can view it on Heroku here: http://yoga-class-schedule-angularjs.herokuapp.c
 
 ## Home Page Screenshot
 
-![screenshot](/app/img/yoga-class.jpg)
+![screenshot](/app/img/yoga-class-v1.png)
