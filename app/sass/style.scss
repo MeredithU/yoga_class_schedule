@@ -1,0 +1,90 @@
+@import 'vars';
+@import 'mixins';
+
+
+/*************************************************
+		Header - Nav Bar
+*************************************************/
+
+nav {
+	background-color: #9eccb3;
+	font-size: 16px;
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	margin: 0;
+	letter-spacing: 0.075em;
+	text-align: right;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+
+  ul {
+		color: #fff;
+		padding-top: 22px;
+		padding-right: 100px;
+		word-spacing: 1.2em;
+
+		li {
+			list-style: none;
+			display: inline-block;
+
+			&:hover {
+		  	color: #9B90C8;
+		  }
+		} 
+	}
+}
+
+nav.sticky {
+	background-color: #efc47D;
+	font-size: 14px;
+  height: 56px; 
+  z-index: 1000;
+
+  ul {
+  	padding-top: 16px;
+  }
+}
+
+
+/*************************************************
+		Banner
+*************************************************/
+
+#banner {
+	background-image: url("../img/waterfall.jpg");
+	background-attachment: fixed;
+	padding-top: 200px;
+	padding-bottom: 300px;
+	text-align: center;
+}
+
+
+/*************************************************
+		Class Schedule
+*************************************************/
+
+.title {
+	text-align: center; 
+}
+
+.search {
+	text-align: center;
+	padding: 30px 0px;
+}
+
+.search label {
+	margin-left: 15px;
+}
+
+
+/*************************************************
+		Twitter Bootstrap-SASS Customizing
+*************************************************/
+
+$font-size-h1: 66px;
+$headings-color: #e4e4e4;
+
+@import 'app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';

@@ -4,28 +4,67 @@
   <meta charset="utf-8">
   <title>Yoga Class Angular App</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
   <link rel="stylesheet" href="css/style.css"/>
 
   <!-- jQuery -->
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-
+  <!-- JavaScript -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/utilities.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
 </head>
 <body>
-  
-  <div ng-view></div>
+
+  <header>
+    <nav>
+      <ul>
+        <li>About</li>
+        <li>Schedule</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="banner">
+    <div class="inner">
+      <h1>Header Title</h1>
+    </div>
+  </section><!-- banner -->
+
+  <section id="about">
+    <h1>About Section</h1>
+  </section><!-- about -->
+
+  <section id="schedule">
+    <div ng-view></div>
+  </section><!-- schedule -->
+
+  <section id="contact">
+    <h1>Contact Section</h1>
+  </section><!-- Contact -->
+
+  <footer>
+  </footer>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
