@@ -1,31 +1,56 @@
 <div class="row">
-  <div class="col-md-1"></div>
-
-  <div class="col-md-10">
+  <div class="col-md-12">
     <div class="title">
       <h1>Upcoming Class Schedule</h1>
-      <h3>**Built using AngularJS**</h3>
+      <h4>**Built using AngularJS**</h4>
     </div><!-- title -->
+  </div><!-- col-md-12 -->
+</div><!-- row -->
 
+<div class="row">
+  <div class="col-md-3">
     <div class="search">
       <!-- Filtering -->
       
-      <label>Search All: </label>
-      <input ng-model="query">
-
-      <label>Day: </label>
-      <input type="text" ng-model="filter.day" placeholder="Day of the Week">
-
-      <label>Studio: </label>
-      <input type="checkbox" ng-model="studios.capitolHill"> Capitol Hill
-      <input type="checkbox" ng-model="studios.wedgewood"> Wedgewood
-
-      <label>Level: </label>
-      <input type="checkbox" ng-model="levels.allLevels"> All
-      <input type="checkbox" ng-model="levels.levelOne"> I
+      <!-- <label>Search All: </label>
+      <input ng-model="query"> -->
+      <div class="preference-filter">
+        <label>Day</label>
+        <input type="text" ng-model="filter.day" placeholder="Day of the Week">
+      </div>
+      <div class="preference-filter">
+        <label>Class</label>
+      </div>
+      <div class="preference-filter">
+        <label>Teacher</label>
+      </div>
+      <div class="preference-filter">
+        <label>Studio</label>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="checkbox" ng-model="studios.capitolHill"> Capitol Hill
+          </div>
+          <div class="col-md-6">
+            <input type="checkbox" ng-model="studios.wedgewood"> Wedgewood
+          </div>
+        </div>
+      </div>
+      <div class="preference-filter">
+        <label>Level</label>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="checkbox" ng-model="levels.allLevels"> All
+          </div>
+          <div class="col-md-6">
+            <input type="checkbox" ng-model="levels.levelOne"> I
+          </div>
+        </div>
+      </div>
 
     </div><!-- search -->
+  </div><!-- col-md-3 -->
 
+  <div class="col-md-9">
     <table class="table table-bordered table-striped table-hover">
       <tbody>
         <tr>
@@ -48,7 +73,5 @@
         </tr>
       </tbody>
     </table>
-  </div><!-- col-md-10 -->
-
-  <div class="col-md-1"></div>
+  </div><!-- col-md-9 -->
 </div><!-- row -->

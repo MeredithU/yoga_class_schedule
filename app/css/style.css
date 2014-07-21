@@ -68,16 +68,33 @@ nav.sticky {
 		Class Schedule
 *************************************************/
 section#schedule {
-  height: 600px; }
+  height: 600px;
+  padding-left: 80px;
+  padding-right: 80px; }
 
-.title {
+#schedule .title {
+  padding-bottom: 30px;
   text-align: center; }
-
-.search {
-  text-align: center;
+#schedule .search {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #9B90C8;
+  color: #fff;
+  height: 360px;
+  text-align: left;
   padding: 30px 0px; }
-  .search label {
-    margin-left: 15px; }
+  #schedule .search .preference-filter {
+    padding-bottom: 20px;
+    font-weight: 300; }
+    #schedule .search .preference-filter .row {
+      margin-left: 0;
+      margin-right: 0; }
+#schedule label {
+  margin-left: 15px;
+  font-weight: 300;
+  text-decoration: underline; }
 
 /*************************************************
 		About
