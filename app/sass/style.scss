@@ -3,6 +3,14 @@
 
 
 /*************************************************
+		Base
+*************************************************/
+
+section#schedule, section#about, section#contact, footer {
+	margin-top: 40px;
+}
+
+/*************************************************
 		Header - Nav Bar
 *************************************************/
 
@@ -27,18 +35,24 @@ nav {
 		word-spacing: 1.2em;
 
 		li {
-			list-style: none;
-			display: inline-block;
-
 			&:hover {
-		  	color: #9B90C8;
+		  	color: #ef5185;
+		  }
+
+		  & a {
+		  	color: #fff;
+		  }
+
+		  & a:hover {
+		  	text-decoration: none;
 		  }
 		} 
 	}
 }
 
 nav.sticky {
-	background-color: #efc47D;
+	/*background-color: #efe2d1;*/
+	background-color: #e3c59f;
 	font-size: 14px;
   height: 56px; 
   z-index: 1000;
@@ -54,17 +68,37 @@ nav.sticky {
 *************************************************/
 
 #banner {
-	background-image: url("../img/waterfall.jpg");
+	background-image: url("../img/banner-yoga-pose.jpg");
 	background-attachment: fixed;
 	padding-top: 200px;
 	padding-bottom: 300px;
 	text-align: center;
+
+	.inner {
+		@include border-radius(4px);
+		background: rgba(52, 27, 43, 0.5);
+		color: #fff;
+		display: inline-block;
+		padding: 3em;
+
+		h1 {
+  		color: #fff;
+  	}
+
+  	.btn.btn-default {
+  		margin-top: 18px;
+  	}
+	}
 }
 
 
 /*************************************************
 		Class Schedule
 *************************************************/
+
+section#schedule {
+	height: 600px;
+}
 
 .title {
 	text-align: center; 
@@ -73,18 +107,62 @@ nav.sticky {
 .search {
 	text-align: center;
 	padding: 30px 0px;
+
+	& label {
+		margin-left: 15px;
+	}
 }
 
-.search label {
-	margin-left: 15px;
+
+/*************************************************
+		About
+*************************************************/
+
+.container {
+	@include border-radius(4px);
+	background-color: #9eccb3;
+	color: #fff;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+
+	& h1 {
+		color: #fff;
+	}
+	
 }
 
+/*************************************************
+		Contact
+*************************************************/
+
+
+/*************************************************
+		Footer
+*************************************************/
+
+footer {
+	border-top: 1px solid #e3c59f;
+
+	& p {
+		color: #aab1b0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+
+		& a {
+			color: #aab1b0;
+			text-decoration: none;
+		}
+	}
+}
 
 /*************************************************
 		Twitter Bootstrap-SASS Customizing
 *************************************************/
 
-$font-size-h1: 66px;
-$headings-color: #e4e4e4;
+$headings-color: #9eccb3;
+/*$link-color: #fff;*/
+$link-hover-color: #ef5185;
 
 @import 'app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
