@@ -10,9 +10,14 @@
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-  <!-- JavaScript -->
+  <!-- Bower Components -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+  <script src='bower_components/lodash/dist/lodash.underscore.min.js'></script>
+  <script src='bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+
+  <!-- JavaScript -->
   <script src="js/utilities.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
@@ -44,26 +49,38 @@
 
   <section id="about" class="container">
     <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <h1>Summer Offers</h1>
+          <h4>We've put together our most cost saving packges just for YOU!</h4>
+        </div><!-- title -->
+      </div><!-- col-md-12 -->
+    </div><!-- row -->
+
+    <div class="row">
       <div class="col-md-6">
         <img src="img/yoga-pose-one.jpg">
         <header>
           <h3>30 days for $40</h3>
         </header>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lobortis lorem, ac pharetra magna. Cras at quam consequat, fermentum orci eget, dapibus lorem. Duis posuere ullamcorper vulputate. Aenean sit amet feugiat elit, ut faucibus ipsum.</p>
-        <button type="button">Learn More</button>
-      </div>
+        <button type="button">Buy Now</button>
+      </div><!-- col-md-6 -->
       <div class="col-md-6">
         <img src="img/yoga-pose-two.jpg">
         <header>
           <h3>10 class pass is only $99</h3>
         </header>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lobortis lorem, ac pharetra magna. Cras at quam consequat, fermentum orci eget, dapibus lorem. Duis posuere ullamcorper vulputate. Aenean sit amet feugiat elit, ut faucibus ipsum.</p>
-        <button type="button">Learn More</button>
-      </div>
-    </div>
+        <button type="button">Buy Now</button>
+      </div><!-- col-md-6 -->
+    </div><!-- row -->
   </section><!-- about -->
 
   <section id="contact" class="container">
+    <div ng-controller="LocationMapCtrl">
+      <google-map center="map.center" zoom="map.zoom"></google-map>
+    </div>
     <h1>Locations</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lobortis lorem, ac pharetra magna. Cras at quam consequat, fermentum orci eget, dapibus lorem. Duis posuere ullamcorper vulputate. Aenean sit amet feugiat elit, ut faucibus ipsum.</p>
     <p>Ut vestibulum, massa a interdum aliquam, leo augue laoreet nulla, non condimentum lorem leo mattis urna. Donec non lectus et elit semper malesuada non eget quam. Morbi nulla ante, volutpat ut dui vitae, iaculis ullamcorper ante. Sed lacus turpis, cursus a semper ac, vulputate quis magna. Pellentesque dignissim, metus id faucibus pellentesque, augue lacus fringilla lacus, a consectetur ante elit eget lectus.</p>

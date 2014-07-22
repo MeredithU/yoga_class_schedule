@@ -2,6 +2,18 @@
 
 var yogaClassControllers = angular.module('yogaClassControllers', []);
 
+yogaClassControllers.controller('LocationMapCtrl', ['$scope', 
+	function($scope) {
+		$scope.map = {
+	    center: {
+	      latitude: 45,
+	      longitude: -73
+	    },
+	    zoom: 8
+		};
+	}
+]);
+
 yogaClassControllers.controller('YogaClassCtrl', ['$scope', '$http', 
 	function($scope, $http) {
 	$http.get('classes/classes.json').success(function(data) {

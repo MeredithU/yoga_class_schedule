@@ -10,6 +10,6 @@
     "angular-route": "1.2.x",
     "angular-loader": "1.2.x",
     "angular-mocks": "~1.2.15",
-    "bootstrap-sass": "~3.2.0"
+    "angular-google-maps": "~1.1.8"
   }
 }

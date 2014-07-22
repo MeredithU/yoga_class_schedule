@@ -3,7 +3,8 @@
 var yogaClassApp = angular.module('yogaClassApp', [
 	'ngRoute',
 	'yogaClassControllers',
-	'yogaClassFilters'
+	'yogaClassFilters',
+	'google-maps'
 ]);
 
 yogaClassApp.config(['$routeProvider',
@@ -20,5 +21,6 @@ yogaClassApp.config(['$routeProvider',
 			otherwise({
 				redirectTo: '/classes'
 			});
-	}]);
+	}
+]);
 

@@ -21,6 +21,11 @@ button {
 	text-transform: uppercase;
 }
 
+.title {
+	padding-bottom: 30px;
+	text-align: center; 
+}
+
 /*************************************************
 		Header - Nav Bar
 *************************************************/
@@ -132,11 +137,6 @@ section#schedule {
 
 #schedule {
 
-	.title {
-		padding-bottom: 30px;
-		text-align: center; 
-	}
-
 	.search {
 		@include border-radius(4px);
 		background-color: #9B90C8;
@@ -208,6 +208,11 @@ section#schedule {
 		letter-spacing: 0.025em;
 	}
 
+	& h3 {
+		color: #9B90C8;
+		margin-top: 0px;
+	}
+
 	& p {
 		font-size: 16px;
 	}
@@ -229,6 +234,7 @@ section#schedule {
 		Contact
 *************************************************/
 
+.angular-google-map-container { height: 400px; }
 
 /*************************************************
 		Footer
