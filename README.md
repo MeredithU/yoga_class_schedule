@@ -18,4 +18,4 @@ You can view it on Heroku here: http://meredithunderell.com/devlab/yoga_class/ap
 
 ## Home Page Screenshot
 
-![screenshot](/app/img/yoga-class-v1.png)
+![screenshot](/app/img/yoga-class-v1.1.png)
