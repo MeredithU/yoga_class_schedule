@@ -14,15 +14,35 @@
       
       <!-- <label>Search All: </label>
       <input ng-model="query"> -->
-      <div class="preference-filter">
+      <div class="preference-filter text-field-filter">
         <label>Day</label>
-        <input type="text" ng-model="filter.day" placeholder="Day of the Week">
+        <div class="row">
+          <div class="col-md-12">
+            <input type="text" ng-model="filter.day" placeholder="Day of the Week">
+          </div>
+        </div>
       </div>
       <div class="preference-filter">
         <label>Class</label>
+        <div class="row">
+          <div class="col-md-12">
+            <input type="checkbox" ng-model="classNames.allLevelsFlowClass"> All Levels Flow
+          </div>
+          <div class="col-md-12">
+            <input type="checkbox" ng-model="classNames.levelOneClass"> Level One
+          </div>
+          <div class="col-md-12">
+            <input type="checkbox" ng-model="classNames.levelTwoClass"> Level Two
+          </div>
+        </div>
       </div>
-      <div class="preference-filter">
+      <div class="preference-filter text-field-filter">
         <label>Teacher</label>
+        <div class="row">
+          <div class="col-md-12">
+            <input type="text" ng-model="filter.teacher" placeholder="Name of Teacher">
+          </div>
+        </div>
       </div>
       <div class="preference-filter">
         <label>Studio</label>
@@ -38,11 +58,14 @@
       <div class="preference-filter">
         <label>Level</label>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <input type="checkbox" ng-model="levels.allLevels"> All
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <input type="checkbox" ng-model="levels.levelOne"> I
+          </div>
+          <div class="col-md-4">
+            <input type="checkbox" ng-model="levels.levelTwo"> II
           </div>
         </div>
       </div>
@@ -62,11 +85,11 @@
           <th>Studio</th>
           <th>Level</th>
         </tr>
-        <tr ng-repeat="yogaClass in classes | filter:query | orderBy:dayNumber | filter:{day: filter.day} | studioFilter:studios | levelFilter:levels">
+        <tr ng-repeat="yogaClass in classes | filter:query | orderBy:dayNumber | filter:{day: filter.day} | filter:{teacher: filter.teacher} | classNameFilter:classNames | studioFilter:studios | levelFilter:levels">
           <td>{{yogaClass.startTime}}</td>
           <td>{{yogaClass.endTime}}</td>
           <td>{{yogaClass.day}}</td>
-          <td><a href="#/classes/{{yogaClass.id}}">{{yogaClass.name}}</a></td>
+          <td><a href="#/classes/{{yogaClass.id}}">{{yogaClass.yogaClassName}}</a></td>
           <td>{{yogaClass.teacher}}</td>
           <td>{{yogaClass.studio}}</td>
           <td>{{yogaClass.level}}</td>

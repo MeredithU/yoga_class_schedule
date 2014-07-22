@@ -82,7 +82,7 @@ section#schedule {
   border-radius: 4px;
   background-color: #9B90C8;
   color: #fff;
-  height: 360px;
+  height: 100%;
   text-align: left;
   padding: 30px 0px; }
   #schedule .search .preference-filter {
@@ -91,6 +91,13 @@ section#schedule {
     #schedule .search .preference-filter .row {
       margin-left: 0;
       margin-right: 0; }
+  #schedule .search .preference-filter.text-field-filter input {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    color: #000;
+    padding-left: 5px; }
 #schedule label {
   margin-left: 15px;
   font-weight: 300;

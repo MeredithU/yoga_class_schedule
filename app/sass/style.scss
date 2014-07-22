@@ -113,7 +113,7 @@ section#schedule {
 		@include border-radius(4px);
 		background-color: #9B90C8;
 		color: #fff;
-		height: 360px;
+		height: 100%;
 		text-align: left;
 		padding: 30px 0px;
 
@@ -125,6 +125,12 @@ section#schedule {
 				margin-left: 0;
 				margin-right: 0;
 			}
+		}
+
+		.preference-filter.text-field-filter input {
+			@include border-radius(4px);
+			color: #000;
+			padding-left: 5px;
 		}
 	}
 

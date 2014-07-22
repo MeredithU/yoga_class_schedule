@@ -1,6 +1,6 @@
 [
 	{	
-		"name": "All Levels Flow",
+		"yogaClassName": "All Levels Flow",
 		"id": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
@@ -11,7 +11,7 @@
 		"level": "All"
 	},
 	{	
-		"name": "All Levels Flow",
+		"yogaClassName": "All Levels Flow",
 		"id": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
@@ -22,7 +22,7 @@
 		"level": "All"
 	},
 	{	
-		"name": "All Levels Flow",
+		"yogaClassName": "All Levels Flow",
 		"id": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
@@ -33,7 +33,7 @@
 		"level": "All"
 	},
 	{	
-		"name": "All Levels Flow",
+		"yogaClassName": "All Levels Flow",
 		"id": "all-levels-flow",
 		"day": "Monday",
 		"dayNumber": "0",
@@ -44,7 +44,7 @@
 		"level": "All"
 	},
 	{	
-		"name": "All Levels Flow",
+		"yogaClassName": "All Levels Flow",
 		"id": "all-levels-flow",
 		"day": "Wednesday",
 		"dayNumber": "2",
@@ -55,7 +55,7 @@
 		"level": "All"
 	},
 	{	
-		"name": "Level I",
+		"yogaClassName": "Level I",
 		"id": "level-one",
 		"day": "Monday",
 		"dayNumber": "0",
@@ -66,7 +66,7 @@
 		"level": "I"
 	},
 	{	
-		"name": "All Levels Flow",
+		"yogaClassName": "All Levels Flow",
 		"id": "all-levels-flow",
 		"day": "Tuesday",
 		"dayNumber": "1",
@@ -77,7 +77,7 @@
 		"level": "All"
 	},
 	{	
-		"name": "Level I",
+		"yogaClassName": "Level I",
 		"id": "level-one",
 		"day": "Monday",
 		"dayNumber": "0",
@@ -88,7 +88,7 @@
 		"level": "I"
 	},
 	{	
-		"name": "All Levels Flow",
+		"yogaClassName": "All Levels Flow",
 		"id": "all-levels-flow",
 		"day": "Tuesday",
 		"dayNumber": "1",

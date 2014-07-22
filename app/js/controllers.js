@@ -10,9 +10,11 @@ yogaClassControllers.controller('YogaClassCtrl', ['$scope', '$http',
 
 	$scope.dayNumber = 'dayNumber';
 
+	$scope.classNames = {allLevelsFlowClass: false, levelOneClass: false, levelTwoClass: false}
+
 	$scope.studios = {capitolHill: false, wedgewood: false};
 
-	$scope.levels = {allLevels: false, levelOne: false};
+	$scope.levels = {allLevels: false, levelOne: false, levelTwo: false};
 
 }]);
 

@@ -28,18 +28,45 @@ angular.module('yogaClassFilters', []).filter('studioFilter', function() {
 		var levelMatches = [];
 
 		angular.forEach(items, function(item) {
-			if(levels.allLevels == false && levels.levelOne == false) {
+			if(levels.allLevels == false && levels.levelOne == false && levels.levelTwo == false) {
 				levelMatches.push(item);
 			}
-			else if(levels.allLevels == true && levels.levelOne == false && item.level == 'All') {
+			else if(levels.allLevels == true && levels.levelOne == false && levels.levelTwo == false && item.level == 'All') {
 				levelMatches.push(item);
 			}
-			else if(levels.allLevels == false && levels.levelOne == true && item.level == 'I') {
+			else if(levels.allLevels == false && levels.levelOne == true && levels.levelTwo == false && item.level == 'I') {
+				levelMatches.push(item);
+			}
+			else if(levels.allLevels == false && levels.levelOne == true && levels.levelTwo == false && item.level == 'II') {
 				levelMatches.push(item);
 			}
 		});
 
 		return levelMatches;
+	};
+})
+
+/* Filter by class */
+.filter('classNameFilter', function() { 
+	return function(items, classNames) {
+		var classNameMatches = [];
+
+		angular.forEach(items, function(item) {
+			if(classNames.allLevelsFlowClass == false && classNames.levelOneClass == false && classNames.levelTwoClass == false) {
+				classNameMatches.push(item);
+			}
+			else if(classNames.allLevelsFlowClass  == true && classNames.levelOneClass == false && classNames.levelTwoClass == false && item.yogaClassName == 'All Levels Flow') {
+				classNameMatches.push(item);
+			}
+			else if(classNames.allLevelsFlowClass  == false && classNames.levelOneClass == true && classNames.levelTwoClass == false && item.yogaClassName == 'Level One') {
+				classNameMatches.push(item);
+			}
+			else if(classNames.allLevelsFlowClass  == false && classNames.levelOneClass == true && classNames.levelTwoClass == false && item.yogaClassName == 'Level Two') {
+				classNameMatches.push(item);
+			}
+		});
+
+		return classNameMatches;
 	};
 });
 
