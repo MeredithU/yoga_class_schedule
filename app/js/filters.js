@@ -37,7 +37,7 @@ angular.module('yogaClassFilters', []).filter('studioFilter', function() {
 			else if(levels.allLevels == false && levels.levelOne == true && levels.levelTwo == false && item.level == 'I') {
 				levelMatches.push(item);
 			}
-			else if(levels.allLevels == false && levels.levelOne == true && levels.levelTwo == false && item.level == 'II') {
+			else if(levels.allLevels == false && levels.levelOne == false && levels.levelTwo == true && item.level == 'II') {
 				levelMatches.push(item);
 			}
 		});
@@ -58,10 +58,10 @@ angular.module('yogaClassFilters', []).filter('studioFilter', function() {
 			else if(classNames.allLevelsFlowClass  == true && classNames.levelOneClass == false && classNames.levelTwoClass == false && item.yogaClassName == 'All Levels Flow') {
 				classNameMatches.push(item);
 			}
-			else if(classNames.allLevelsFlowClass  == false && classNames.levelOneClass == true && classNames.levelTwoClass == false && item.yogaClassName == 'Level One') {
+			else if(classNames.allLevelsFlowClass  == false && classNames.levelOneClass == true && classNames.levelTwoClass == false && item.yogaClassName == 'Level I') {
 				classNameMatches.push(item);
 			}
-			else if(classNames.allLevelsFlowClass  == false && classNames.levelOneClass == true && classNames.levelTwoClass == false && item.yogaClassName == 'Level Two') {
+			else if(classNames.allLevelsFlowClass  == false && classNames.levelOneClass == false && classNames.levelTwoClass == true && item.yogaClassName == 'Level II') {
 				classNameMatches.push(item);
 			}
 		});
