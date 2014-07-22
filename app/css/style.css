@@ -4,6 +4,16 @@
 section#schedule, section#about, section#contact, footer {
   margin-top: 40px; }
 
+button {
+  background: none;
+  border: solid 1px;
+  letter-spacing: 2px;
+  min-width: 18em;
+  padding: 0.75em 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 /*************************************************
 		Header - Nav Bar
 *************************************************/
@@ -33,13 +43,17 @@ nav {
       text-decoration: none; }
 
 nav.sticky {
-  /*background-color: #efe2d1;*/
-  background-color: #e3c59f;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e4e4;
   font-size: 14px;
   height: 56px;
   z-index: 1000; }
   nav.sticky ul {
     padding-top: 16px; }
+    nav.sticky ul li a {
+      color: #7c8081; }
+      nav.sticky ul li a:hover {
+        color: #ef5185; }
 
 /*************************************************
 		Banner
@@ -60,9 +74,14 @@ nav.sticky {
     display: inline-block;
     padding: 3em; }
     #banner .inner h1 {
-      color: #fff; }
-    #banner .inner .btn.btn-default {
-      margin-top: 18px; }
+      color: #fff;
+      margin-top: 0px; }
+    #banner .inner button {
+      margin-top: 18px;
+      text-transform: uppercase; }
+      #banner .inner button:hover {
+        background: rgba(52, 27, 43, 0.6);
+        transition: all 0.2s ease-in-out; }
 
 /*************************************************
 		Class Schedule
@@ -98,26 +117,50 @@ section#schedule {
     border-radius: 4px;
     color: #000;
     padding-left: 5px; }
+  #schedule .search .preference-filter.last-item {
+    padding-bottom: 0px; }
 #schedule label {
   margin-left: 15px;
   font-weight: 300;
   text-decoration: underline; }
+#schedule a {
+  color: #000; }
+#schedule a:hover {
+  color: #ef5185;
+  text-decoration: none; }
 
 /*************************************************
 		About
 *************************************************/
-.container {
+#about.container {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  background-color: #9eccb3;
-  color: #fff;
+  color: #7c8081;
   width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  .container h1 {
-    color: #fff; }
+  #about.container img {
+    display: block;
+    margin: 0 auto;
+    padding: 20px; }
+  #about.container h3, #about.container p {
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: 0.025em; }
+  #about.container p {
+    font-size: 16px; }
+  #about.container button {
+    display: block;
+    margin: 18px auto;
+    text-transform: uppercase; }
+    #about.container button:hover {
+      background-color: #ef5185;
+      color: #fff;
+      transition: all 0.2s ease-in-out; }
 
 /*************************************************
 		Contact
@@ -139,7 +182,6 @@ footer {
 /*************************************************
 		Twitter Bootstrap-SASS Customizing
 *************************************************/
-/*$link-color: #fff;*/
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
