@@ -187,7 +187,7 @@ section#schedule {
 		About
 *************************************************/
 
-#about.container {
+#about.container, #contact.container {
 	@include border-radius(4px);
 	color: #7c8081;
 	width: 1200px;
@@ -235,10 +235,27 @@ section#schedule {
 *************************************************/
 
 .angular-google-map-container { 
-	height: 200px;
-	width: 300px; 
+	height: 264px;
+	width: 473px; 
 	display: block;
 	margin: 20px auto;
+}
+
+#contact.container {
+
+	.location {
+
+		.location-logistics p {
+			margin-left: 50px;
+			margin-right: 0px;
+			text-align: left;
+		}
+
+		.location-info p {
+			margin-left: 0px;
+			text-align: left;
+		}
+	}
 }
 
 /*************************************************
