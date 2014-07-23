@@ -52,7 +52,7 @@
       <div class="col-md-12">
         <div class="title">
           <h1>Summer Offers</h1>
-          <h4>We've put together our most cost saving packges just for YOU!</h4>
+          <h4>We've put together our most cost saving packages just for YOU!</h4>
         </div><!-- title -->
       </div><!-- col-md-12 -->
     </div><!-- row -->
@@ -78,10 +78,32 @@
   </section><!-- about -->
 
   <section id="contact" class="container">
-    <div ng-controller="LocationMapCtrl">
-      <google-map center="map.center" zoom="map.zoom"></google-map>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <h1>Studio Locations</h1>
+          <h4>We have studios located in Capitol Hill and Wedgewood.</h4>
+        </div><!-- title -->
+      </div><!-- col-md-12 -->
+    </div><!-- row -->
+
+    <div class="row">
+      <div class="col-md-6">
+        <div ng-controller="LocationMapCtrl">
+          <google-map center="capitolHillMap.center" zoom="capitolHillMap.zoom">
+            <marker coords="capitolHillMap.marker.coords"></marker>
+          </google-map>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div ng-controller="LocationMapCtrl">
+          <google-map center="wedgewoodMap.center" zoom="wedgewoodMap.zoom"> 
+            <marker coords="wedgewoodMap.marker.coords"></marker>        
+          </google-map>
+        </div>
+      </div>
     </div>
-    <h1>Locations</h1>
+
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lobortis lorem, ac pharetra magna. Cras at quam consequat, fermentum orci eget, dapibus lorem. Duis posuere ullamcorper vulputate. Aenean sit amet feugiat elit, ut faucibus ipsum.</p>
     <p>Ut vestibulum, massa a interdum aliquam, leo augue laoreet nulla, non condimentum lorem leo mattis urna. Donec non lectus et elit semper malesuada non eget quam. Morbi nulla ante, volutpat ut dui vitae, iaculis ullamcorper ante. Sed lacus turpis, cursus a semper ac, vulputate quis magna. Pellentesque dignissim, metus id faucibus pellentesque, augue lacus fringilla lacus, a consectetur ante elit eget lectus.</p>
   </section><!-- Contact -->

@@ -234,7 +234,12 @@ section#schedule {
 		Contact
 *************************************************/
 
-.angular-google-map-container { height: 400px; }
+.angular-google-map-container { 
+	height: 200px;
+	width: 300px; 
+	display: block;
+	margin: 20px auto;
+}
 
 /*************************************************
 		Footer

@@ -4,12 +4,32 @@ var yogaClassControllers = angular.module('yogaClassControllers', []);
 
 yogaClassControllers.controller('LocationMapCtrl', ['$scope', 
 	function($scope) {
-		$scope.map = {
+		$scope.capitolHillMap = {
 	    center: {
-	      latitude: 45,
-	      longitude: -73
+	      latitude: 47.614329,
+	      longitude: -122.325194
 	    },
-	    zoom: 8
+	    zoom: 14,
+	    marker: {
+	    	coords: {
+	    		latitude: 47.614329,
+	      	longitude: -122.325194
+	      }
+	    }
+		};
+
+		$scope.wedgewoodMap = {
+	    center: {
+	      latitude: 47.6825699,
+	      longitude: -122.2908037
+	    },
+	    zoom: 14,
+	    marker: {
+	    	coords: {
+	    		latitude: 47.6825699,
+	      	longitude: -122.2908037
+	      }
+	    }
 		};
 	}
 ]);
