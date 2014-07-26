@@ -1,8 +1,8 @@
 # Yoga Studio Website - Design still in progress
 
-## This website was built using AngularJS, HTML5, CSS3 and Twitter Bootstrap for SASS 
+## This website was built using a RESTful Node API, AngularJS, HTML5, CSS3 and Twitter Bootstrap for SASS 
 
-This application allows you to search for a particular yoga class.
+The final product will be a fully functioning website for yoga studios which includes instant search functionality.
 
 You can view it on Heroku here: http://meredithunderell.com/devlab/yoga_class/app/#/classes
 
