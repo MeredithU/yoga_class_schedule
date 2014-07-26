@@ -6,6 +6,8 @@ The final product will be a fully functioning website for yoga studios which inc
 
 You can view it on Heroku here: http://meredithunderell.com/devlab/yoga_class/app/#/classes
 
+You can check out the API here: http://meredithunderell.com/devlab/yoga_class/app/api/yogaclasses
+
 ## Set Up
 
 1) Clone the repository
