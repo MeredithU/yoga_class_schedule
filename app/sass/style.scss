@@ -30,61 +30,34 @@ button {
 		Header - Nav Bar
 *************************************************/
 
-nav {
-	background-color: #9eccb3;
-	font-size: 16px;
-	position: fixed;
-	width: 100%;
-	height: 70px;
-	margin: 0;
-	letter-spacing: 0.075em;
-	text-align: right;
+.navbar {
 	text-transform: uppercase;
-	cursor: pointer;
 	-webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
 
-  ul {
+  &.navbar-default .navbar-brand {
   	color: #fff;
-		padding-top: 22px;
-		padding-right: 100px;
-		word-spacing: 1.2em;
+  }
 
-		li {
-			&:hover {
-		  	color: #ef5185;
-		  }
-
-		  & a {
-		  	color: #fff;
-		  }
-
-		  & a:hover {
-		  	text-decoration: none;
-		  }
-		} 
-	}
+	&.navbar-default .navbar-nav > li > a {
+  	color: #fff;
+  }
 }
 
 nav.sticky {
 	background-color: #fff;
 	border-bottom: 1px solid #e4e4e4;
-	font-size: 14px;
-  height: 56px; 
-  z-index: 1000;
 
-  ul {
-  	padding-top: 16px;
+	&.navbar.navbar-default .navbar-brand {
+		color: #7c8081;
+	}
 
-  	li {
-  		a {
-  			color: #7c8081;
+	&.navbar-default .navbar-nav > li > a {
+  	color: #7c8081;
 
-  			&:hover {
-		  		color: #ef5185;
-		  	}
-  		}
-  	}
+  	&:hover {
+		 	color: #ef5185;
+		}
   }
 }
 
@@ -284,5 +257,9 @@ footer {
 
 $headings-color: #9eccb3;
 $link-hover-color: #ef5185;
+
+$navbar-default-bg: #9eccb3;
+$navbar-default-color: #fff;
+$navbar-default-link-hover-color: #ef5185;
 
 @import 'app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';

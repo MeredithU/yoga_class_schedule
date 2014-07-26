@@ -1,0 +1,197 @@
+<section id="banner">
+    <div class="inner">
+      <h1>10 classes for $99</h1>
+      <h3>**Design in progress**</h3>
+      <button type="button">Learn More</button>
+    </div>
+  </section><!-- banner -->
+
+  <section id="schedule" ng-controller="YogaClassCtrl">
+  	<div class="row">
+		  <div class="col-md-12">
+		    <div class="title">
+		      <h1>Class Schedule</h1>
+		      <h4>Find out which classes are just right for you!</h4>
+		    </div><!-- title -->
+		  </div><!-- col-md-12 -->
+		</div><!-- row -->
+
+		<div class="row">
+		  <div class="col-md-3">
+		    <div class="search">
+		      
+		      <!-- Filtering -->
+		      <div class="preference-filter text-field-filter">
+		        <label>Day</label>
+		        <div class="row">
+		          <div class="col-md-12">
+		            <input type="text" ng-model="filter.day" placeholder="Day of the Week">
+		          </div>
+		        </div>
+		      </div>
+		      <div class="preference-filter">
+		        <label>Class</label>
+		        <div class="row">
+		          <div class="col-md-12">
+		            <input type="checkbox" ng-model="classNames.allLevelsFlowClass"> All Levels Flow
+		          </div>
+		          <div class="col-md-12">
+		            <input type="checkbox" ng-model="classNames.levelOneClass"> Level I
+		          </div>
+		          <div class="col-md-12">
+		            <input type="checkbox" ng-model="classNames.levelTwoClass"> Level II
+		          </div>
+		        </div>
+		      </div>
+		      <div class="preference-filter text-field-filter">
+		        <label>Teacher</label>
+		        <div class="row">
+		          <div class="col-md-12">
+		            <input type="text" ng-model="filter.teacher" placeholder="Name of Teacher">
+		          </div>
+		        </div>
+		      </div>
+		      <div class="preference-filter">
+		        <label>Studio</label>
+		        <div class="row">
+		          <div class="col-md-6">
+		            <input type="checkbox" ng-model="studios.capitolHill"> Capitol Hill
+		          </div>
+		          <div class="col-md-6">
+		            <input type="checkbox" ng-model="studios.wedgewood"> Wedgewood
+		          </div>
+		        </div>
+		      </div>
+		      <div class="preference-filter last-item">
+		        <label>Level</label>
+		        <div class="row">
+		          <div class="col-md-4">
+		            <input type="checkbox" ng-model="levels.allLevels"> All
+		          </div>
+		          <div class="col-md-4">
+		            <input type="checkbox" ng-model="levels.levelOne"> I
+		          </div>
+		          <div class="col-md-4">
+		            <input type="checkbox" ng-model="levels.levelTwo"> II
+		          </div>
+		        </div>
+		      </div>
+
+		    </div><!-- search -->
+		  </div><!-- col-md-3 -->
+
+		  <div class="col-md-9">
+		    <table class="table table-bordered table-striped table-hover">
+		      <tbody>
+		        <tr>
+		          <th>Begins</th>
+		          <th>Ends</th>
+		          <th>Day</th>
+		          <th>Class</th>
+		          <th>Teacher</th>
+		          <th>Studio</th>
+		          <th>Level</th>
+		        </tr>
+		        <tr ng-repeat="yogaClass in classes | filter:query | orderBy:dayNumber | filter:{day: filter.day} | filter:{teacher: filter.teacher} | classNameFilter:classNames | studioFilter:studios | levelFilter:levels">
+		          <td>{{yogaClass.startTime}}</td>
+		          <td>{{yogaClass.endTime}}</td>
+		          <td>{{yogaClass.day}}</td>
+		          <td><a href="#/classes/{{yogaClass.id}}">{{yogaClass.yogaClassName}}</a></td>
+		          <td>{{yogaClass.teacher}}</td>
+		          <td>{{yogaClass.studio}}</td>
+		          <td>{{yogaClass.level}}</td>
+		        </tr>
+		      </tbody>
+		    </table>
+		  </div><!-- col-md-9 -->
+		</div><!-- row -->
+    
+  </section><!-- schedule -->
+
+  <section id="about" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <h1>Summer Offers</h1>
+          <h4>We've put together our most cost saving passes just for YOU!</h4>
+        </div><!-- title -->
+      </div><!-- col-md-12 -->
+    </div><!-- row -->
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/yoga-pose-one.jpg">
+        <header>
+          <h3>30 days for $40</h3>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lobortis lorem, ac pharetra magna. Cras at quam consequat, fermentum orci eget, dapibus lorem. Duis posuere ullamcorper vulputate. Aenean sit amet feugiat elit, ut faucibus ipsum.</p>
+        <button type="button">Buy Now</button>
+      </div><!-- col-md-6 -->
+      <div class="col-md-6">
+        <img src="img/yoga-pose-two.jpg">
+        <header>
+          <h3>10 class pass for only $99</h3>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lobortis lorem, ac pharetra magna. Cras at quam consequat, fermentum orci eget, dapibus lorem. Duis posuere ullamcorper vulputate. Aenean sit amet feugiat elit, ut faucibus ipsum.</p>
+        <button type="button">Buy Now</button>
+      </div><!-- col-md-6 -->
+    </div><!-- row -->
+  </section><!-- about -->
+
+  <section id="contact" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <h1>Studio Locations</h1>
+          <h4>We have studios located in Capitol Hill and Wedgewood.</h4>
+        </div><!-- title -->
+      </div><!-- col-md-12 -->
+    </div><!-- row -->
+
+    <div class="row">
+      <div class="col-md-6">
+        <div ng-controller="LocationMapCtrl">
+          <google-map center="capitolHillMap.center" zoom="capitolHillMap.zoom">
+            <marker coords="capitolHillMap.marker.coords"></marker>
+          </google-map>
+        </div>
+        <header>
+          <h3>Capitol Hill</h3>
+        </header>
+        <div class="location row">
+          <div class="location-logistics col-md-4">
+            <p>Address:</p>
+            <p>Phone Number:</p>
+            <p>Email:</p>
+          </div>
+          <div class="location-info col-md-8">
+            <p>400 East Pike Street Seattle, WA 98122</p>
+            <p>123.456.6789</p>
+            <p>capitolhill@yoga.com</p>
+          </div>
+        </div><!-- location-info row -->
+      </div>
+      <div class="col-md-6">
+        <div ng-controller="LocationMapCtrl">
+          <google-map center="wedgewoodMap.center" zoom="wedgewoodMap.zoom"> 
+            <marker coords="wedgewoodMap.marker.coords"></marker>        
+          </google-map>
+        </div>
+        <header>
+          <h3>Wedgewood</h3>
+        </header>
+        <div class="location row">
+          <div class="location-logistics col-md-4">
+            <p>Address:</p>
+            <p>Phone Number:</p>
+            <p>Email:</p>
+          </div>
+          <div class="location-info col-md-8">
+            <p>730 35th Avenue NE Seattle, WA 98115</p>
+            <p>123.456.6789</p>
+            <p>wedgewood@yoga.com</p>
+          </div>
+        </div><!-- location-info row -->
+      </div>
+    </div>
+  </section><!-- Contact -->

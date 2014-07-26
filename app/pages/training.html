@@ -1,0 +1,1 @@
+<h1>Training Page</h1>

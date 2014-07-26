@@ -21,43 +21,24 @@ button {
 /*************************************************
 		Header - Nav Bar
 *************************************************/
-nav {
-  background-color: #9eccb3;
-  font-size: 16px;
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  margin: 0;
-  letter-spacing: 0.075em;
-  text-align: right;
+.navbar {
   text-transform: uppercase;
-  cursor: pointer;
   -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
-  nav ul {
-    color: #fff;
-    padding-top: 22px;
-    padding-right: 100px;
-    word-spacing: 1.2em; }
-    nav ul li:hover {
-      color: #ef5185; }
-    nav ul li a {
-      color: #fff; }
-    nav ul li a:hover {
-      text-decoration: none; }
+  transition: all 0.4s ease-in-out; }
+  .navbar.navbar-default .navbar-brand {
+    color: #fff; }
+  .navbar.navbar-default .navbar-nav > li > a {
+    color: #fff; }
 
 nav.sticky {
   background-color: #fff;
-  border-bottom: 1px solid #e4e4e4;
-  font-size: 14px;
-  height: 56px;
-  z-index: 1000; }
-  nav.sticky ul {
-    padding-top: 16px; }
-    nav.sticky ul li a {
-      color: #7c8081; }
-      nav.sticky ul li a:hover {
-        color: #ef5185; }
+  border-bottom: 1px solid #e4e4e4; }
+  nav.sticky.navbar.navbar-default .navbar-brand {
+    color: #7c8081; }
+  nav.sticky.navbar-default .navbar-nav > li > a {
+    color: #7c8081; }
+    nav.sticky.navbar-default .navbar-nav > li > a:hover {
+      color: #ef5185; }
 
 /*************************************************
 		Banner
@@ -3789,23 +3770,23 @@ tbody.collapse.in {
         margin-right: 0; } }
 
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7; }
+  background-color: #9eccb3;
+  border-color: #88c1a2; }
   .navbar-default .navbar-brand {
     color: #777777; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
       color: #5e5e5e;
       background-color: transparent; }
   .navbar-default .navbar-text {
-    color: #777777; }
+    color: white; }
   .navbar-default .navbar-nav > li > a {
     color: #777777; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      color: #333333;
+      color: #ef5185;
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #555555;
-    background-color: #e7e7e7; }
+    background-color: #88c1a2; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #cccccc;
     background-color: transparent; }
@@ -3817,30 +3798,30 @@ tbody.collapse.in {
       background-color: #888888; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
-    border-color: #e7e7e7; }
+    border-color: #88c1a2; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #e7e7e7;
+    background-color: #88c1a2;
     color: #555555; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #777777; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333333;
+        color: #ef5185;
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
       color: #555555;
-      background-color: #e7e7e7; }
+      background-color: #88c1a2; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #cccccc;
       background-color: transparent; } }
   .navbar-default .navbar-link {
     color: #777777; }
     .navbar-default .navbar-link:hover {
-      color: #333333; }
+      color: #ef5185; }
   .navbar-default .btn-link {
     color: #777777; }
     .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-      color: #333333; }
+      color: #ef5185; }
     .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
       color: #cccccc; }
 
