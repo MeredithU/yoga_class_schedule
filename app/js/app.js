@@ -25,17 +25,9 @@ yogaClassApp.config(['$routeProvider', '$locationProvider',
 			.when('/contact', {
 				templateUrl: 'pages/contact.html'
 			})
-			.when('/class-schedule', {
-				templateUrl: 'pages/home#class-schedule'
-			})
-			/*.when('/classes/:classId', {
-				templateUrl: 'partials/class-detail.html',
-				controller: 'YogaClassDetailCtrl'
-			})*/
-			/*.otherwise({
+			.otherwise({
 				redirectTo: '/'
-			});*/
-
+			});
 		
 		$locationProvider.html5Mode(true); // To remove the hash from the URL	
 	}

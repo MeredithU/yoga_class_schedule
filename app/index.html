@@ -32,17 +32,17 @@
 
   <header>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" ng-controller="ScrollController">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/">Yoga Studio</a>
+          <a class="navbar-brand" href="/devlab/yoga_class/app/">Yoga Studio</a>
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#class_schedule">Schedule</a></li>
-          <li><a href="/passes">Passes & Rates</a></li>
-          <li><a href="/training">Training</a></li>
-          <li><a href="/">Studios & Contact</a></li>
+          <li><a ng-click="gotoSchedule()">Schedule</a></li>
+          <li><a href="passes">Passes & Rates</a></li>
+          <li><a href="training">Training</a></li>
+          <li><a ng-click="gotoStudioLocation()">Studios & Contact</a></li>
         </ul>
       </div>
     </nav>

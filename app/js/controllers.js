@@ -3,6 +3,24 @@
 var yogaClassControllers = angular.module('yogaClassControllers', []);
 
 /*****************************************************************
+		Navigation Controller
+*****************************************************************/
+
+yogaClassControllers.controller('ScrollController', ['$scope', '$location', '$anchorScroll',
+  function ($scope, $location, $anchorScroll) {
+    $scope.gotoSchedule = function() {
+      $location.hash('class_schedule');
+      $anchorScroll();
+    };
+
+    $scope.gotoStudioLocation = function() {
+      $location.hash('studio-locations');
+      $anchorScroll();
+    };
+  }
+]);
+
+/*****************************************************************
 		Class Schedule Controller
 *****************************************************************/
 
@@ -59,7 +77,7 @@ yogaClassControllers.controller('LocationMapCtrl', ['$scope',
 ]);
 
 /*****************************************************************
-		Class Schedule Controller
+		Passes & Rates Controller
 *****************************************************************/
 
 yogaClassControllers.controller('AccordionCtrl', ['$scope', 
