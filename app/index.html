@@ -22,7 +22,10 @@
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
+
+  <base href="/">
 </head>
+
 <body>
 
   <header>
@@ -30,15 +33,14 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/">Yoga Studio</a>
+          <a class="navbar-brand" href="/home">Yoga Studio</a>
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Schedule</a></li>
-          <li><a href="#passes">Passes</a></li>
-          <li><a href="#training">Training</a></li>
-          <li><a href="#">Studios</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/home#class-schedule">Schedule</a></li>
+          <li><a href="/passes">Passes & Rates</a></li>
+          <li><a href="/training">Training</a></li>
+          <li><a href="/home#studio-locations">Studios & Contact</a></li>
         </ul>
       </div>
     </nav>

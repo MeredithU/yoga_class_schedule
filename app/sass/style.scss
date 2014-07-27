@@ -6,7 +6,7 @@
 		Base
 *************************************************/
 
-section#schedule, section#about, section#contact, footer {
+.section-block {
 	margin-top: 40px;
 }
 
@@ -26,6 +26,11 @@ button {
 	text-align: center; 
 }
 
+#main {
+	padding-top: 50px;
+}
+
+
 /*************************************************
 		Header - Nav Bar
 *************************************************/
@@ -37,6 +42,10 @@ button {
 
   &.navbar-default .navbar-brand {
   	color: #fff;
+
+  	&:hover {
+		 	color: #ef5185;
+		}
   }
 
 	&.navbar-default .navbar-nav > li > a {
@@ -50,6 +59,10 @@ nav.sticky {
 
 	&.navbar.navbar-default .navbar-brand {
 		color: #7c8081;
+
+		&:hover {
+		 	color: #ef5185;
+		}
 	}
 
 	&.navbar-default .navbar-nav > li > a {
@@ -69,8 +82,8 @@ nav.sticky {
 #banner {
 	background-image: url("../img/banner-yoga-pose.jpg");
 	background-attachment: fixed;
-	padding-top: 200px;
-	padding-bottom: 300px;
+	padding-top: 150px;
+	padding-bottom: 200px;
 	text-align: center;
 
 	.inner {
@@ -88,9 +101,11 @@ nav.sticky {
   	button {
   		margin-top: 18px;
   		text-transform: uppercase;
+  		color: #fff;
 
   		&:hover {
   			background: rgba(52, 27, 43, 0.6);
+  			color: #fff;
   			transition: all 0.2s ease-in-out;
   		}
   	}
@@ -157,10 +172,10 @@ section#schedule {
 
 
 /*************************************************
-		About
+		Offers
 *************************************************/
 
-#about.container, #contact.container {
+#offers.container, #contact.container {
 	@include border-radius(4px);
 	color: #7c8081;
 	width: 1200px;
@@ -190,10 +205,15 @@ section#schedule {
 		font-size: 16px;
 	}
 
+	a {
+  	text-decoration: none;
+  }
+
 	button {
 		display: block;
   	margin: 18px auto;
   	text-transform: uppercase;
+  	color: #7c8081;
 
   	&:hover {
   		background-color: #ef5185;
@@ -201,6 +221,17 @@ section#schedule {
   		transition: all 0.2s ease-in-out;
   	}
   }
+}
+
+
+/*************************************************
+		Passes & Rates
+*************************************************/
+
+#passes {
+	h1 {
+		text-align: center;
+	}
 }
 
 /*************************************************
@@ -214,22 +245,6 @@ section#schedule {
 	margin: 20px auto;
 }
 
-#contact.container {
-
-	.location {
-
-		.location-logistics p {
-			margin-left: 50px;
-			margin-right: 0px;
-			text-align: left;
-		}
-
-		.location-info p {
-			margin-left: 0px;
-			text-align: left;
-		}
-	}
-}
 
 /*************************************************
 		Footer
