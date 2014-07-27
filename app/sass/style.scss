@@ -30,6 +30,10 @@ button {
 	padding-top: 50px;
 }
 
+.nav, .pagination, .carousel, .panel-title a { 
+	cursor: pointer; /* For Angular Bootstrap */
+}
+
 
 /*************************************************
 		Header - Nav Bar
@@ -229,10 +233,60 @@ section#schedule {
 *************************************************/
 
 #passes {
+
 	h1 {
-		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.title h4, .panel-group {
+		width: 650px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.buy-now a {
+		color: #9B90C8;
+		font-size: 16px;
+		font-weight: 500;
+		text-decoration: underline;
+
+		&:hover {
+			color: #ef5185;
+		}
 	}
 }
+
+
+/*************************************************
+		Training
+*************************************************/
+
+#training {
+	width: 650px;
+	color: #7c8081;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	h4, p {
+		line-height: 1.6em;
+		letter-spacing: 0.025em;
+	}
+
+	.training-formats {
+		@include border-radius(4px);
+		border: 1px solid #7c8081;
+		margin: 20px;
+
+		h4 {
+			color: #9B90C8;
+		}
+	}
+}
+
 
 /*************************************************
 		Contact
@@ -252,6 +306,7 @@ section#schedule {
 
 footer {
 	border-top: 1px solid #e3c59f;
+	margin-top: 40px;
 
 	& p {
 		color: #aab1b0;
@@ -265,6 +320,7 @@ footer {
 		}
 	}
 }
+
 
 /*************************************************
 		Twitter Bootstrap-SASS Customizing

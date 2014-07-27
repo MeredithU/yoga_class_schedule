@@ -4,7 +4,8 @@ var yogaClassApp = angular.module('yogaClassApp', [
 	'ngRoute',
 	'yogaClassControllers',
 	'yogaClassFilters',
-	'google-maps'
+	'google-maps',
+	'ui.bootstrap'
 ]);
 
 yogaClassApp.config(['$routeProvider', '$locationProvider',
@@ -15,7 +16,8 @@ yogaClassApp.config(['$routeProvider', '$locationProvider',
 				controller: 'YogaClassCtrl'
 			})
 			.when('/passes', {
-				templateUrl: 'pages/passes.html'
+				templateUrl: 'pages/passes.html',
+				controller: 'AccordionCtrl'
 			})
 			.when('/training', {
 				templateUrl: 'pages/training.html'
@@ -23,17 +25,16 @@ yogaClassApp.config(['$routeProvider', '$locationProvider',
 			.when('/contact', {
 				templateUrl: 'pages/contact.html'
 			})
-			/*.when('/classes', {
-				templateUrl: 'partials/class-list.html',
-				controller: 'YogaClassCtrl'
-			})*/
+			.when('/class-schedule', {
+				templateUrl: 'pages/home#class-schedule'
+			})
 			/*.when('/classes/:classId', {
 				templateUrl: 'partials/class-detail.html',
 				controller: 'YogaClassDetailCtrl'
 			})*/
-			.otherwise({
+			/*.otherwise({
 				redirectTo: '/'
-			});
+			});*/
 
 		
 		$locationProvider.html5Mode(true); // To remove the hash from the URL	

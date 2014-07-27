@@ -21,6 +21,10 @@ button {
 #main {
   padding-top: 50px; }
 
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer;
+  /* For Angular Bootstrap */ }
+
 /*************************************************
 		Header - Nav Bar
 *************************************************/
@@ -163,7 +167,41 @@ section#schedule {
 		Passes & Rates
 *************************************************/
 #passes h1 {
-  text-align: center; }
+  padding-bottom: 10px; }
+#passes .title h4, #passes .panel-group {
+  width: 650px;
+  display: block;
+  margin: 0 auto; }
+#passes .buy-now a {
+  color: #9B90C8;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline; }
+  #passes .buy-now a:hover {
+    color: #ef5185; }
+
+/*************************************************
+		Training
+*************************************************/
+#training {
+  width: 650px;
+  color: #7c8081; }
+  #training img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px; }
+  #training h4, #training p {
+    line-height: 1.6em;
+    letter-spacing: 0.025em; }
+  #training .training-formats {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #7c8081;
+    margin: 20px; }
+    #training .training-formats h4 {
+      color: #9B90C8; }
 
 /*************************************************
 		Contact
@@ -178,7 +216,8 @@ section#schedule {
 		Footer
 *************************************************/
 footer {
-  border-top: 1px solid #e3c59f; }
+  border-top: 1px solid #e3c59f;
+  margin-top: 40px; }
   footer p {
     color: #aab1b0;
     padding-top: 20px;

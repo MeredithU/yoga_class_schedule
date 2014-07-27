@@ -1,5 +1,51 @@
 <section id="passes" class="section-block container">
-	<div class="row">
+	<div class="title row">
 		<h1>Passes & Rates</h1>
+		<h4>We offer a range of classes and levels to ensure everyone has an opportunity to incorporate yoga into their lifestyle.</h4>
 	</div>
-</section>
+
+	<div class="memberships">
+		<div ng-controller="AccordionCtrl">
+		  <accordion close-others="oneAtATime">
+		  	<accordion-group heading="Month to Month" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+      		<p>Available for $105.</p>
+      		<p>You get to enjoy unlimited yoga across all locations. There is no contract and is charged monthly to your credit card. This option is perfect for those who practice more than twice a week.</p>
+      		<p class="buy-now"><a href="">Buy online now</a></p>
+    		</accordion-group>
+    		<accordion-group heading="Drop In">
+      		<p>No need to register or commit. Just show up!</p>
+      		<ul>
+	      		<li>$14 per 1 hour class</li>
+	      		<li>$17 per 75 or 90-minute class</li>
+	      		<li>$20 per 2 hour class</li>
+      		</ul>
+    		</accordion-group>
+    		<accordion-group heading="2 Month Trial for New Members">
+    			<p>Available for $100.</p>
+      		<p>This new member special is an afforable way to get familiar with our studio and our variety of teachers. Costs less than $2 per day! One per customer.</p>
+      		<p class="buy-now"><a href="">Buy online now</a></p>
+    		</accordion-group>
+    		<accordion-group heading="Class Pass">
+      		<p>Class passes are perfect for students who take class once or twice a week. They are valid for 6 months and may be used at both locations.</p>
+      		<ul>
+	      		<li>$80 - 5 class pass</li>
+	      		<li>$90 - 10 class pass (Our Summer Special!)</li>
+	      		<li>$150 - 15 class pass</li>
+	      		<li>$170 - 20 class pass</li>
+	      	</ul>
+      		<p class="buy-now"><a href="">Buy online now</a></p>
+    		</accordion-group>
+    		<accordion-group heading="Annual">
+      		<p>This continues to be our most economical option as it works out to be $20.60 per week! If you practice two times per week or more, then this package is the best value. A 12-month contract applies.</p>
+      		<ul>
+	      		<li>$1071 plus tax at purchase</li>
+	      		<li>12 month contract required</li>
+	      		<li>Unlimited classes at both locations</li>
+	      	</ul>
+      		<p class="buy-now"><a href="">Buy online now</a></p>
+    		</accordion-group>
+		  </accordion>
+		</div>
+	</div><!-- memberships -->
+
+</section><!-- passes -->

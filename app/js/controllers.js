@@ -2,6 +2,30 @@
 
 var yogaClassControllers = angular.module('yogaClassControllers', []);
 
+/*****************************************************************
+		Class Schedule Controller
+*****************************************************************/
+
+yogaClassControllers.controller('YogaClassCtrl', ['$scope', '$http', 
+	function($scope, $http) {
+		$http.get('/api/yogaclasses').success(function(data) {
+			$scope.classes = data;
+		});
+
+		$scope.dayNumber = 'dayNumber';
+
+		$scope.classNames = {allLevelsFlowClass: false, levelOneClass: false, levelTwoClass: false}
+
+		$scope.studios = {capitolHill: false, wedgewood: false};
+
+		$scope.levels = {allLevels: false, levelOne: false, levelTwo: false};
+	}
+]);
+
+/*****************************************************************
+		Google Map Controller
+*****************************************************************/
+
 yogaClassControllers.controller('LocationMapCtrl', ['$scope', 
 	function($scope) {
 		$scope.capitolHillMap = {
@@ -34,19 +58,18 @@ yogaClassControllers.controller('LocationMapCtrl', ['$scope',
 	}
 ]);
 
-yogaClassControllers.controller('YogaClassCtrl', ['$scope', '$http', 
-	function($scope, $http) {
-		$http.get('/api/yogaclasses').success(function(data) {
-			$scope.classes = data;
-		});
+/*****************************************************************
+		Class Schedule Controller
+*****************************************************************/
 
-		$scope.dayNumber = 'dayNumber';
+yogaClassControllers.controller('AccordionCtrl', ['$scope', 
+	function($scope) {
+	  $scope.oneAtATime = false;
 
-		$scope.classNames = {allLevelsFlowClass: false, levelOneClass: false, levelTwoClass: false}
-
-		$scope.studios = {capitolHill: false, wedgewood: false};
-
-		$scope.levels = {allLevels: false, levelOne: false, levelTwo: false};
+	  $scope.status = {
+	    isFirstOpen: true,
+	    isFirstDisabled: false
+	  };
 	}
 ]);
 
@@ -63,3 +86,7 @@ yogaClassControllers.controller('YogaClassDetailCtrl', ['$scope', '$routeParams'
 
 		});
 }]);
+
+
+
+
