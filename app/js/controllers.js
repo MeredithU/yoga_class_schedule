@@ -26,7 +26,8 @@ yogaClassControllers.controller('ScrollController', ['$scope', '$location', '$an
 
 yogaClassControllers.controller('YogaClassCtrl', ['$scope', '$http', 
 	function($scope, $http) {
-		$http.get('/api/yogaclasses').success(function(data) {
+		$http.get('/api/yogaclasses').success(function(data) { // For development
+		/*$http.get('/devlab/yoga_class/app/classes/classes.json').success(function(data) {*/ // For production
 			$scope.classes = data;
 		});
 
