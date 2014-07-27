@@ -16,7 +16,7 @@ You can view the site online here: http://meredithunderell.com/devlab/yoga_class
 
 5) Used Twitter Bootstrap for SASS 
 
-6) Used $anchorScroll for anchor tags 
+6) Used $anchorScroll for anchor tags (AngularJS)
 
 ## Set Up
 
@@ -26,7 +26,7 @@ You can view the site online here: http://meredithunderell.com/devlab/yoga_class
 
 3) Start the server: npm start
 
-4) Open http://localhost:8000/app/index.html
+4) Open http://localhost:8000/
 
 ## Known Issues - Working on Fixes
 
