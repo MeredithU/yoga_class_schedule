@@ -218,10 +218,11 @@ section#schedule {
 footer {
   border-top: 1px solid #e3c59f;
   margin-top: 40px; }
+  footer .container {
+    padding-top: 20px;
+    padding-bottom: 10px; }
   footer p {
     color: #aab1b0;
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-align: center; }
     footer p a {
       color: #aab1b0;
