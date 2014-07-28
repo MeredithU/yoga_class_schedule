@@ -16,6 +16,9 @@ angular.module('yogaClassFilters', []).filter('studioFilter', function() {
 			else if(studios.capitolHill == false && studios.wedgewood == true && item.studio == 'Wedgewood') {
 				studioMatches.push(item);
 			}
+			else if(studios.capitolHill == true && studios.wedgewood == true) {
+				studioMatches.push(item);
+			}
 		});
 
 		return studioMatches;
@@ -40,6 +43,18 @@ angular.module('yogaClassFilters', []).filter('studioFilter', function() {
 			else if(levels.allLevels == false && levels.levelOne == false && levels.levelTwo == true && item.level == 'II') {
 				levelMatches.push(item);
 			}
+			else if(levels.allLevels == true && levels.levelOne == false && levels.levelTwo == true) {
+				levelMatches.push(item);
+			}
+			else if(levels.allLevels == true && levels.levelOne == true && levels.levelTwo == false) {
+				levelMatches.push(item);
+			}
+			else if(levels.allLevels == false && levels.levelOne == true && levels.levelTwo == true) {
+				levelMatches.push(item);
+			}
+			else if(levels.allLevels == true && levels.levelOne == true && levels.levelTwo == true) {
+				levelMatches.push(item);
+			}
 		});
 
 		return levelMatches;
@@ -62,6 +77,9 @@ angular.module('yogaClassFilters', []).filter('studioFilter', function() {
 				classNameMatches.push(item);
 			}
 			else if(classNames.allLevelsFlowClass  == false && classNames.levelOneClass == false && classNames.levelTwoClass == true && item.yogaClassName == 'Level II') {
+				classNameMatches.push(item);
+			}
+			else if(classNames.allLevelsFlowClass  == true && classNames.levelOneClass == true && classNames.levelTwoClass == true) {
 				classNameMatches.push(item);
 			}
 		});
