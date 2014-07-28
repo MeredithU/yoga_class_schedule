@@ -32,7 +32,7 @@ You can view the site online here: http://meredithunderell.com/devlab/yoga_class
 
 1) If you click on Passes & Rates or Training in the nav bar and then click on Schedule or Studios & Contact, the $anchorScroll does not work. It only works if you are currently on the home page.
 
-2) Selecting more than one filter within the same category does not display all of those options.
+2) Search filter category: If you select two options, no results will show up.
 
 ## Home Page Screenshot
 
